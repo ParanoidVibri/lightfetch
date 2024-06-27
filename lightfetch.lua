@@ -1,20 +1,5 @@
 #!/usr/bin/env lua
 
-print("                                                                 #####")
-print("                                                                #######")
-print("                   #                                            ##O#O##")
-print("  ######          ###                                           #VVVVV#")
-print("    ##             #                                          ##  VVV  ##")
-print("    ##         ###    ### ####   ###    ###  ##### #####     #          ##")
-print("    ##        #  ##    ###    ##  ##     ##    ##   ##      #            ##")
-print("    ##       #   ##    ##     ##  ##     ##      ###        #            ###")
-print("    ##          ###    ##     ##  ##     ##      ###       QQ#           ##Q")
-print("    ##       # ###     ##     ##  ##     ##     ## ##    QQQQQQ#       #QQQQQQ")
-print("    ##      ## ### #   ##     ##  ###   ###    ##   ##   QQQQQQQ#     #QQQQQQQ")
-print("  ############  ###   ####   ####   #### ### ##### #####   QQQQQ#######QQQQQ")
-
-print("-------------------------------------------------------------------------------")
-
 local username = os.getenv("USER")
 local kernel_version = io.popen("uname -r", "r"):read("*a")
 local operating_system = io.popen("lsb_release -sd", "r"):read("*a"):gsub("%\n", "")
